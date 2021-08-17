@@ -44,6 +44,12 @@ These are the bugs existing in the current implementation.
     // This is not a logical mistake rather a grammatical mistake.
     currentDay = slots(i).day // It should be currentDate 
     // because the column points to DATE column : Integer.  
+
+    line 254 : under Assign number of duties 
+    // This might be a bug or something ...
+    // Not needed -> - DutyExtras.CountTotalMonthExtras - numVolunteers
+    While (i < numDuties - DutyExtras.CountTotalMonthExtras - numVolunteers)
+    
     
     // =============================================================
 
@@ -67,5 +73,10 @@ These are the bugs existing in the current implementation.
     currentDate = slots(i).date // It should be currentDate 
     // because the column points to DATE column : Integer. Renaming to the 
     // proper variable may cause unexpected issues later which may be hard to debug. 
-    // This is not a serious issue, can be avoided.     
+    // This is not a serious issue, can be avoided.
+
+    line 254 : under Assign number of duties 
+    // This might be a bug or something ...
+    // Not needed -> - DutyExtras.CountTotalMonthExtras - numVolunteers
+    While (i < numDuties)     
    ```
